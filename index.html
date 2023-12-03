@@ -15,8 +15,34 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link href="./index.css" rel="stylesheet" />
+    <!-- defer -> '미루다' HTML을 다 읽은 후에 이루어지게끔 -->
+    <script src="index.js" defer></script>
+    <script src="dummy.js"></script>
   </head>
   <body>
+    <div class="nav-container" style="display: flex">
+      <p class="title">집꾸미기</p>
+      <div>
+        <ul class="nav-all" style="display: flex; list-style: none; gap: 10px">
+          <li class="nav-list" id="home">Home</li>
+          <li class="nav-list">스토어</li>
+          <li class="nav-list">시공견적</li>
+        </ul>
+      </div>
+    </div>
+    <div class="goods-container">
+      <div class="input-box">
+        <input type="text" placeholder="검색어입력" class="search-input" />
+      </div>
+      <div class="goods-box"></div>
+    </div>
+
+    <div class="cart-container">
+      <div class="cart-title">장바구니</div>
+      <div class="drag-area">여기로 드래그</div>
+    </div>
+    <!-- ---------------------------- -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
